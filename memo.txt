@@ -1,0 +1,30 @@
+( React.ReactNode )
+
+제일 처음 알아볼 타입은 ReactNode 타입입니다.
+
+
+( ReactElement )
+
+createElement 함수를 통해 생성된 객체의 타입입니다.
+
+( ReactChild )
+
+ReactElement 타입이 리액트 요소 객체만을 허용했다면, 
+ReactChild 타입은 여기서 
+원시 타입까지는 허용하는 타입입니다.
+
+
+( 타입별 허용 범위 비교 )
+ReactNode > ReactChild > ReactElement
+
+ReactNode 타입은 컴포넌트, 원시 타입, null, 
+undefined를 모두 허용하는 타입입니다.
+
+type ReactNode = ReactChild | ReactFragment | ReactPortal | boolean | null | undefined;
+
+
+ReactChild 타입은 컴포넌트, 원시 타입 리터럴을 허용하는 타입입니다.
+
+type ReactChild = ReactElement | ReactText;
+
+ReactElement 타입은 createElement 함수를 통해 생성된 컴포넌트만을 허용하는 타입입니다.
