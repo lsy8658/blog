@@ -3,15 +3,15 @@ import React from "react";
 
 export default function SinglePostPage() {
   return (
-    <div className="flex flex-col md:flex-row gap-5">
-      <div className="w-[100%] md:w-[30%] lg:w-[30%] h-[200px] md:h-[100vh]">
+    <div className="flex flex-col md:flex-row gap-8">
+      <div className="w-[100%] md:w-[30%] lg:w-[30%]  ">
         <Image
           src="/hero.gif"
           alt="img"
           width={0}
           height={0}
           priority={true}
-          className="w-[100%] h-[200px] md:h-[100vh] object-contain md:object-cover"
+          className="w-[100%] h-[200px] md:h-[80vh] object-contain md:object-cover"
         />
       </div>
       <div className="flex-1">
@@ -32,7 +32,7 @@ export default function SinglePostPage() {
             Date May 05. 10
           </div>
 
-          <div className="pt-[20px] text-[16px]">
+          <div className="pt-[20px] text-[16px] max-w-[700px]">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
             fuga quisquam tempore amet eos. Non assumenda distinctio, magni
             fugit modi laudantium voluptates dignissimos accusantium accusamus
